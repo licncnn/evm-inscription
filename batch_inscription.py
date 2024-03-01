@@ -35,6 +35,8 @@ sender_account = w3.eth.account.from_key(private_key)
 sender_address = sender_account.address
 chain_id = w3.eth.chain_id
 
+
+
 # last nonce of this account, used to compute the transaction count
 initial_nonce = w3.eth.get_transaction_count(sender_address) 
 print(f"starting nonce is {initial_nonce}")
